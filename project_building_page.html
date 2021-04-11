@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="utf-8"/>
+        <title>Sitelab</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script type="text/javascript">
+            function openMenu() {
+                document.getElementById("sidenav").style.width = "250px";
+                document.getElementById("header").style.marginLeft = "250px";
+            }
+
+            function closeMenu() {
+                document.getElementById("sidenav").style.width = "0";
+                document.getElementById("header").style.marginLeft= "0";
+            }
+        </script>
+    </head>
+    <body>
+        <div id="header" class="header">
+            <span style="cursor:pointer;" onclick="openMenu()">&#9776;</span>
+            <p style="display:inline;">Welcome to Sitelab</p>
+        </div>
+        <div id="sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+            <a href="">Hello, Login</a>
+            <a href="">Profile</a>
+            <a href="">Portfolio</a>
+            <a href="">About us</a>
+            <a href="">Theme</a>
+            <a href="">Home</a>
+        </div>
+        <div class="toolbar">
+            <button>Save</button>
+        </div>
+        <div class="main">
+            <textarea name="pageTitle" rows="1" cols="200" placeholder="Title (This is what appears on the tab)"></textarea>
+            <textarea name="pageBody" rows="20" cols="200"></textarea>
+        </div>
+    </body>
+    <footer>
+        <a href="">Help/Support Centre</a>
+        <a href="">Contact Us</a>
+    </footer>
+</html>
